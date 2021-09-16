@@ -11,7 +11,8 @@
             margin-left: auto;
             margin-right: auto;
             color: #ffd35f;
-            font-family: "Times New Roman", cursive;
+            font-family: "Times New Roman", sans-serif;
+            font-style: italic;
             font-size: 23pt;
         }
         #mainHeading::selection {
@@ -65,10 +66,10 @@
             font-family: 'Times New Roman', sans-serif;
         }
         .history {
-            width: 756px;
+            width: 100%;
             border-collapse: collapse;
             font-size: 14pt;
-            margin: 0 auto 12px;
+            margin: 7px auto;
         }
         .history td {
             border: 1px solid rgb(118, 118, 118);
@@ -81,16 +82,16 @@
             padding-right: 5px;
         }
         .error {
-            background-color: #ffe3e3;
-            width: 756px;
+            width: 100%;
             margin-left: auto;
             margin-right: auto;
             font-size: 16pt;
             font-weight: bold;
-            border-radius: 3px;
-            border: 1px solid darkred;
+            /*border-radius: 3px;
+            border: 1px solid red;
+            color: darkred;*/
             text-align: center;
-            color: darkred;
+
             height: 50px;
             padding-top: 20px;
             padding-bottom: 0;
@@ -167,7 +168,7 @@
                 <td rowspan="4"><img src="img/area.png" title="График" alt="График"/></td>
             </tr>
             <tr>
-                <td><b>Изменение Y:</b><div class="text"><label data-validate="Обязательное поле"><input type="text" class="number" name="coordinateY" data-min="-3" data-max="3" data-separator="," autocomplete="off" autofocus></label></div></td>
+                <td><b>Изменение Y:</b><div class="text"><label data-validate="Обязательное поле"><input type="text" required title="Число из промежутка (-3...3); разделитель целой и дробной части - точка (,)" class="number" name="coordinateY" data-min="-3" data-max="3" data-separator="," autocomplete="off" autofocus></label></div></td>
             </tr>
             <tr>
                 <td><b>Изменение R:</b>
